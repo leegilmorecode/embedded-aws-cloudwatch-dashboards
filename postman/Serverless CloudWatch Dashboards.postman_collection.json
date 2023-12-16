@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "29744bc2-7fcd-4446-85ad-158600c1cb7a",
+    "name": "Serverless CloudWatch Dashboards",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "Book Holiday",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"ALL_INCLUSIVE\",\n  \"starRating\": 4,\n  \"destination\": \"Tropical Paradise\",\n  \"hotelName\": \"Sunset Resort\",\n  \"createdDate\": \"2023-12-16T12:00:00Z\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.eu-west-1.amazonaws.com/prod/holidays",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "eu-west-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "holidays"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
